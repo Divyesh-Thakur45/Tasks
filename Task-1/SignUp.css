@@ -1,0 +1,111 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Mulish, sans-serif;
+}
+
+.main {
+    background-image: url('Images/Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: #fff;
+    height: 95vh;
+    width: 75%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.form-leftside {
+    background-color: #084B3E;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 33px 51px;
+}
+
+.form-rightside {
+    background-color: #FFFFFF;
+    width: 65%;
+    height: 100%;
+    padding: 55px 200px 55px 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.desc p {
+    color: #F9E2BA;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.para {
+    color: #232323;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.5px;
+}
+
+.sub-UserData {
+    margin: 0px 0px 40px 0px;
+}
+
+.UserData label {
+    display: block;
+    color: #343434;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.UserData input {
+    line-height: 24px;
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.UserData button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 76px;
+    padding: 24px 43px;
+    border-radius: 20px;
+    background-color: #00C38B;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+}
+
+.bottom p {
+    color: #BDBDBD;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.bottom a {
+    color: #00C38B;
+}
