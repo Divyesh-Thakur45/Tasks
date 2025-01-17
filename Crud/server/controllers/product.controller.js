@@ -1,26 +1,5 @@
 import ProductModel from "../models/product.model.js";
 
-const CreateProducts = async (req, res) => {
-  const { image, email, password, gender, age, date, userId } = req.body;
-  console.log(req.file);
-  
-  // const image = req.file.originalname;
-  try {
-    await ProductModel.create({
-      image,
-      email,
-      password,
-      gender,
-      age,
-      date,
-      userId,
-    });
-    res.status(201).send({ message: "Product created successfully" });
-  } catch (error) {
-    console.log(error);
-    res.status(404).send("Error creating products");
-  }
-};
 
 const DeleteProducts = async (req, res) => {
   const { ProductId } = req.params;
@@ -77,7 +56,6 @@ const UpdateProducts = async (req, res) => {
   }
 };
 export {
-  CreateProducts,
   DeleteProducts,
   GetAllProducts,
   GetOneProduct,
