@@ -10,6 +10,8 @@ const ProductSchema = new mongoose.Schema({
   password: { type: Number, required: true },
   gender: { type: String, required: true },
   age: { type: Number, required: true },
+  language: { type: Array, required: true },
+  hobbies: { type: Array, required: true },
   date: { type: String, required: true },
   userId: { type: Number, required: true, default: 1 },
 });

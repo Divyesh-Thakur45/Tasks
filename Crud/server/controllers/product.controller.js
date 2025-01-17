@@ -1,6 +1,5 @@
 import ProductModel from "../models/product.model.js";
 
-
 const DeleteProducts = async (req, res) => {
   const { ProductId } = req.params;
   try {
@@ -40,24 +39,4 @@ const GetOneProduct = async (req, res) => {
   }
 };
 
-const UpdateProducts = async (req, res) => {
-  const { ProductId } = req.params;
-  try {
-    const updatedProduct = await ProductModel.findByIdAndUpdate(
-      ProductId,
-      req.body,
-      { new: true }
-    );
-    res.status(200).send({ message: updatedProduct });
-    console.log(updatedProduct);
-  } catch (error) {
-    console.log(error);
-    res.status(404).send("Error updating products");
-  }
-};
-export {
-  DeleteProducts,
-  GetAllProducts,
-  GetOneProduct,
-  UpdateProducts,
-};
+export { DeleteProducts, GetAllProducts, GetOneProduct };
